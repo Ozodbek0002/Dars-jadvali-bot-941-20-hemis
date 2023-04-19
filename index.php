@@ -5,7 +5,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 require_once 'Telegram.php';
 require_once 'model.php';
-
+require_once 'cron.php';
 $telegram=new Telegram($_ENV['TELEGRAM_BOT_TOKEN']);
 $chat_id=$telegram->ChatID();
 $req=$telegram->Text();
