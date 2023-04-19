@@ -123,6 +123,7 @@ try {
         else
             sendWeekLessons(dayName(strtotime('today')));
     }
+storeDataDayByDay();
 } catch (Exception $e) {
     $telegram->sendMessage([
         'chat_id' => $chat_id,
@@ -130,3 +131,4 @@ try {
         'reply_to_message_id' => $telegram->MessageID()
     ]);
 }
+
