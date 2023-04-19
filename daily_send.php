@@ -17,7 +17,7 @@ if (dayName(strtotime('today')) == 'yakshanba' || count(getCustomDayLessons(dayN
                 '⏰ ' . $lesson['start'] .
                 '-' . $lesson['end'] . PHP_EOL . PHP_EOL;
         }
-        $chat_id = -1001417980834;
+        $chat_id = -1001408612280;
         $telegram->sendMessage([
             'chat_id' => $chat_id,
             'text' => $text
